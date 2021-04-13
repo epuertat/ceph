@@ -51,7 +51,7 @@ suitable for installation we recommend you build deb or rpm packages,
 or refer to the `ceph.spec.in` or `debian/rules` to see which
 configuration options are specified for production builds.
 
-Build instructions:
+Build instructions: 
 
 	./do_cmake.sh
 	cd build
