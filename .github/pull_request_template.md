@@ -55,3 +55,17 @@ https://raw.githubusercontent.com/ceph/ceph/master/SubmittingPatches.rst
 - `jenkins test ceph-volume tox`
 
 </details>
+<!--
+## Commit Message
+
+{{title}}
+
+Approved Reviews: {{ approved_reviews_by }}
+Author: {{author}} 
+
+{% for user in approved_reviews_by %}
+Reviewed-by: {{user}}
+{% endfor %}
+
+##
+-->
