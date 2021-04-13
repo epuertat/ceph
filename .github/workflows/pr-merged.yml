@@ -9,5 +9,5 @@ jobs:
       - name: Leave comment
         env:
           REDMINE_API_KEY: "${{ secrets.REDMINE_API_KEY }}"      
-          run: |
-            curl -x '' -H "X-Redmine-API-Key: $REDMINE_API_KEY" https://tracker.ceph.com/issues/50343.json -X PUT -H 'Content-Type: application/json' -d '{"issue": {"notes": "This is another note added via API"}}'
+        run: |
+          curl -x '' -H "X-Redmine-API-Key: $REDMINE_API_KEY" https://tracker.ceph.com/issues/50343.json -X PUT -H 'Content-Type: application/json' -d '{"issue": {"notes": "This is another note added via API"}}'
