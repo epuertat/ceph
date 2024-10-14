@@ -83,12 +83,14 @@ jobs:
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
     - if: matrix.build-mode == 'manual' && matrix.language == 'c-cpp'
-      shell: bash
-      run: |
-        ./install-deps.sh
-        ./do_cmake.sh -DWITH_PYTHON3=3.12
-        cd build
-        ninja
+      run: ./install-deps.sh
+      
+    - if: matrix.build-mode == 'manual' && matrix.language == 'c-cpp'
+      run: ./do_cmake.sh -DWITH_PYTHON3=3.12
+      
+    - if: matrix.build-mode == 'manual' && matrix.language == 'c-cpp'
+      run: ninja
+      working-directory: build
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
