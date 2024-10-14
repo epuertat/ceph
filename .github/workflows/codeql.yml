@@ -86,7 +86,7 @@ jobs:
       shell: bash
       run: |
         ./install-deps.sh
-        ./do_cmake.sh
+        ./do_cmake.sh -DWITH_PYTHON3=3.12
         cd build
         ninja
 
