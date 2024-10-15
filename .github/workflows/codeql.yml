@@ -89,7 +89,8 @@ jobs:
       run: ./do_cmake.sh -DWITH_PYTHON3=3.12
       
     - if: matrix.build-mode == 'manual' && matrix.language == 'c-cpp'
-      run: ninja
+      shell: bash
+      run: ninja && cat boost/src/Boost-stamp/download-Boost.cmake
       working-directory: build
 
     - name: Perform CodeQL Analysis
