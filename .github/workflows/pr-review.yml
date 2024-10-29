@@ -9,7 +9,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Add Reviewed-by Trailer
-        uses: epuertat/reviewed-by-trailer-action@main
+        uses: epuertat/add-reviewed-by-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
