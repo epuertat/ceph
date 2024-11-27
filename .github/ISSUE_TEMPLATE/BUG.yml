@@ -49,15 +49,7 @@ body:
       multiple: true
       options:
         - Critical
-        - Medium
-  - type: checkboxes
-    id: regression
-    attributes:
-      label: Regression
-      description: Did this feature previously work?
-      options:
-        - label: Yes
-          required: false        
+        - Medium    
   - type: textarea
     id: logs
     attributes:
