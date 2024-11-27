@@ -46,7 +46,6 @@ body:
     id: severity
     attributes:
       label: How impacting is it?
-      multiple: true
       options:
         - Critical
         - Medium    
